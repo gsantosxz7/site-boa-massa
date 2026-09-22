@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script>document.documentElement.classList.add("js");</script>
+
+<title>Boa Massa | Pizzaria em Belo Jardim - PE</title>
+<meta name="description" content="Boa Massa em Belo Jardim - PE. Pizzas, pizza cone, esfirras, petiscos, drinks e bebidas. Peça pelo WhatsApp ou Quero Delivery.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#000000">
+<!-- Quando o site tiver endereço (domínio), adicione: <link rel="canonical" href="https://SEU-DOMINIO/"> e <meta property="og:url" content="https://SEU-DOMINIO/"> -->
+
+<!-- Compartilhamento (WhatsApp, Instagram, Facebook e X) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Boa Massa">
+<meta property="og:title" content="Boa Massa | Pizzaria em Belo Jardim - PE">
+<meta property="og:description" content="Pizzas, pizza cone, esfirras, petiscos, drinks e bebidas. Peça pelo WhatsApp ou Quero Delivery.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1593504049359-74330189a345-74330189a345?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=80">
+<meta property="og:image:alt" content="Pizza com bastante queijo, em close">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Boa Massa | Pizzaria em Belo Jardim - PE">
+<meta name="twitter:description" content="Pizzas, pizza cone, esfirras, petiscos, drinks e bebidas. Peça pelo WhatsApp ou Quero Delivery.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1593504049359-74330189a345-74330189a345?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=80">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23ff6b1a'/%3E%3Ccircle cx='16' cy='16' r='10' fill='%23000'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,600..900,0..100&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+<!-- Dados estruturados (só informações reais fornecidas pela Boa Massa) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Boa Massa",
+  "alternateName": "Pizzaria Boa Massa",
+  "servesCuisine": "Pizza",
+  "telephone": "+55 81 99924-1818",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "R. Pedro Firmino, 299, São Pedro",
+    "addressLocality": "Belo Jardim",
+    "addressRegion": "PE",
+    "postalCode": "55155-000",
+    "addressCountry": "BR"
+  },
+  "areaServed": { "@type": "City", "name": "Belo Jardim" },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "18:00",
+      "closes": "23:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "17:00",
+      "closes": "23:00"
+    }
+  ],
+  "hasMap": "https://maps.google.com/?cid=11693896392988287300",
+  "sameAs": ["https://www.instagram.com/boa_massa_bj/"]
+}
+</script>
+
+<style>
+/* ==========================================================
+   Boa Massa | landing page de pedidos
+   Preto como base, laranja da marca nos CTAs e detalhes.
+   ========================================================== */
+
+:root{
+  --preto:#000;
+  --painel:#111;
+  --branco:#fff;
+  --suave:rgba(255,255,255,.72);
+  --linha:rgba(255,255,255,.12);
+  --laranja:#ff6b1a;
+  --laranja-claro:#ff8a4d;
+  --verde:#3ddc84;
+  --vermelho:#ff5a4f;
+
+  --fonte-titulo:"Fraunces", Georgia, "Times New Roman", serif;
+  --fonte-texto:"Hanken Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --altura-topo:68px;
+  --limite:1160px;
+  --margem:clamp(16px,5vw,48px);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none !important}
+
+html{
+  scroll-behavior:smooth;
+  scroll-padding-top:calc(var(--altura-topo) + 12px);
+  -webkit-text-size-adjust:100%;
+}
+
+body{
+  margin:0;
+  background:var(--preto);
+  color:var(--branco);
+  font-family:var(--fonte-texto);
+  font-size:1.0625rem;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+
+h1,h2,h3,h4,p,figure,blockquote,dl,dd,ul{margin:0}
+ul{padding:0;list-style:none}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+::selection{background:var(--laranja);color:#000}
+:focus-visible{outline:2px solid var(--laranja);outline-offset:3px;border-radius:6px}
+
+.cont{max-width:var(--limite);margin-inline:auto;padding-inline:var(--margem)}
+
+/* Fonte dos títulos: serifada clássica, em negrito, com pontas arredondadas */
+.hero h1,.secao h2,.cta-final h2,.marca,.nota-num,.fala blockquote p,.canal h3,.painel h3,.item h4,.dest h3,.dif h3{
+  font-family:var(--fonte-titulo);
+  font-variation-settings:"SOFT" 100,"WONK" 0;
+}
+
+/* Ícones */
+.ico{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+/* Pular para o conteúdo */
+.pular{
+  position:absolute;left:16px;top:-64px;z-index:100;
+  padding:10px 16px;border-radius:8px;
+  background:var(--laranja);color:#000;font-weight:700;text-decoration:none;
+}
+.pular:focus{top:12px}
+
+/* ---------- Botões ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:14px 26px;
+  border:1.5px solid transparent;border-radius:999px;
+  font-weight:700;font-size:1rem;line-height:1.2;text-decoration:none;text-align:center;
+  cursor:pointer;
+  transition:background-color .2s, color .2s, border-color .2s, transform .15s;
+}
+.btn .ico{width:20px;height:20px}
+.btn:active{transform:scale(.97)}
+.btn-laranja{background:var(--laranja);color:#000}
+.btn-laranja:hover{background:var(--laranja-claro)}
+.btn-contorno{border-color:rgba(255,255,255,.5);color:var(--branco)}
+.btn-contorno:hover{background:var(--branco);border-color:var(--branco);color:#000}
+.btn-grande{padding:16px 30px;font-size:1.05rem}
+
+/* ---------- Topo e menu ---------- */
+.topo{
+  position:fixed;inset:0 0 auto 0;z-index:50;
+  height:var(--altura-topo);
+  background:rgba(0,0,0,.88);
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--linha);
+}
+.topo-int{
+  height:100%;
+  max-width:var(--limite);margin-inline:auto;padding-inline:var(--margem);
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+}
+.marca{
+  display:inline-flex;align-items:center;gap:10px;
+  font-weight:800;font-size:1.4rem;line-height:1;text-decoration:none;
+}
+.marca svg,.marca img{width:32px;height:32px}
+
+.menu{display:flex;align-items:center;gap:clamp(18px,3vw,36px);margin-inline:auto}
+.menu a{font-weight:500;font-size:.98rem;text-decoration:none;color:var(--suave);transition:color .2s}
+.menu a:hover{color:var(--branco)}
+
+.topo-acoes{display:flex;align-items:center;gap:10px}
+.btn-topo{padding:10px 20px;font-size:.95rem}
+
+.menu-abrir,.menu-fechar{
+  display:none;width:44px;height:44px;
+  align-items:center;justify-content:center;
+  border:1px solid var(--linha);border-radius:12px;
+}
+.menu-abrir svg,.menu-fechar svg{width:22px;height:22px}
+
+@media (max-width:859px){
+  .menu-abrir{display:inline-flex}
+  .topo:has(.menu:target) .menu-abrir{display:none}
+  .topo:has(.menu:target) .menu-fechar{display:inline-flex}
+
+  .menu{
+    display:none;
+    position:absolute;top:100%;left:0;right:0;margin:0;
+    flex-direction:column;align-items:stretch;gap:0;
+    padding:6px var(--margem) 24px;
+    background:#000;border-bottom:1px solid var(--linha);
+  }
+  .menu:target{display:flex;animation:abrir-menu .25s ease-out}
+  .menu a{padding:16px 0;font-size:1.1rem;color:var(--branco);border-bottom:1px solid var(--linha)}
+}
+@media (max-width:420px){
+  .marca{font-size:1.15rem;gap:8px}
+  .marca svg,.marca img{width:28px;height:28px}
+  .btn-topo{padding:9px 13px;font-size:.86rem}
+  .menu-abrir,.menu-fechar{width:40px;height:40px}
+  .topo-acoes{gap:8px}
+}
+@keyframes abrir-menu{
+  from{opacity:0;transform:translateY(-8px)}
+  to{opacity:1;transform:none}
+}
+
+/* ---------- Seções ---------- */
+.secao{padding:clamp(64px,10vw,120px) 0;border-top:1px solid var(--linha)}
+.secao h2{
+  font-weight:800;
+  font-size:clamp(1.9rem,4.4vw,3.1rem);line-height:1.1;
+  text-wrap:balance;
+}
+.cab{max-width:660px;margin-bottom:36px}
+.cab p{margin-top:14px;color:var(--suave)}
+
+/* Entrada suave (só quando o JavaScript está ativo) */
+.js .rev{opacity:0;transform:translateY(14px);transition:opacity .6s ease, transform .6s ease}
+.js .rev.vis{opacity:1;transform:none}
+
+/* ---------- Hero ---------- */
+.hero{
+  min-height:100svh;
+  display:flex;align-items:center;
+  padding:calc(var(--altura-topo) + clamp(20px,5vw,64px)) 0 clamp(48px,8vw,96px);
+  overflow:clip;
+}
+.hero-int{
+  width:100%;
+  max-width:var(--limite);margin-inline:auto;padding-inline:var(--margem);
+  display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+  align-items:center;gap:clamp(28px,6vw,80px);
+}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.chip{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:7px 14px;border:1px solid var(--linha);border-radius:999px;
+  font-size:.9rem;font-weight:500;color:var(--suave);
+}
+.chip .ico{width:16px;height:16px;color:var(--laranja)}
+.ponto{width:8px;height:8px;border-radius:50%;background:var(--laranja)}
+.chip.aberto .ponto{background:var(--verde)}
+.chip.fechado .ponto{background:var(--vermelho)}
+
+.hero h1{
+  font-weight:800;
+  font-size:clamp(2.2rem,5.8vw,4.6rem);line-height:1.05;letter-spacing:-.015em;
+  text-wrap:balance;
+}
+.lead{margin-top:22px;max-width:46ch;font-size:1.15rem;color:var(--suave)}
+.acoes{margin-top:32px;display:flex;flex-wrap:wrap;gap:12px}
+.hero-info{margin-top:26px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;color:var(--suave);font-size:.95rem}
+.selo{display:flex;align-items:center;gap:10px}
+
+.estrelas{
+  position:relative;display:inline-block;
+  font-family:"Segoe UI Symbol",system-ui,sans-serif;
+  font-size:1.1rem;line-height:1;letter-spacing:2px;
+  color:rgba(255,255,255,.25);
+}
+.estrelas-cheias{position:absolute;left:0;top:0;overflow:hidden;white-space:nowrap;color:var(--laranja)}
+
+.hero-foto{
+  position:relative;width:100%;max-width:520px;aspect-ratio:4/5;margin-inline:auto;
+  overflow:hidden;
+  border:1px solid var(--linha);border-radius:28px;background:#111;
+  box-shadow:0 30px 90px rgba(255,107,26,.18), 0 30px 60px rgba(0,0,0,.6);
+}
+.hero-foto img{width:100%;height:100%;object-fit:cover;animation:respirar 22s ease-in-out infinite alternate}
+.hero-foto::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(to top,rgba(0,0,0,.4),transparent 45%);
+}
+@keyframes respirar{from{transform:scale(1)}to{transform:scale(1.07)}}
+
+@media (max-width:859px){
+  .hero{min-height:auto}
+  .hero-int{grid-template-columns:1fr}
+  .hero-foto{order:-1;max-width:none;aspect-ratio:4/3;border-radius:22px}
+}
+
+/* ---------- Peça do seu jeito ---------- */
+.canais{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.canal{
+  display:flex;flex-direction:column;gap:14px;
+  padding:32px;
+  background:var(--painel);border:1px solid var(--linha);border-radius:22px;
+}
+.canal-ico{
+  width:52px;height:52px;border-radius:16px;
+  display:grid;place-items:center;
+  background:rgba(255,107,26,.12);color:var(--laranja);
+}
+.canal h3{font-weight:800;font-size:1.6rem;line-height:1.15}
+.canal p{color:var(--suave)}
+.canal .btn{margin-top:auto;align-self:flex-start}
+.canal .detalhe{font-size:.92rem}
+.nota-entrega{margin-top:20px;color:var(--suave);font-size:.95rem}
+
+.canais:has(.canal[hidden]){grid-template-columns:1fr}
+@media (min-width:700px){
+  .canais:has(.canal[hidden]) .canal{flex-direction:row;align-items:center;gap:24px}
+  .canais:has(.canal[hidden]) .canal-txt{flex:1}
+  .canais:has(.canal[hidden]) .canal .btn{margin:0}
+}
+.canal-txt{display:flex;flex-direction:column;gap:8px}
+@media (max-width:699px){
+  .canais{grid-template-columns:1fr}
+  .canal{padding:24px}
+}
+
+/* ---------- Destaques da casa ---------- */
+.destaques{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.dest{
+  position:relative;isolation:isolate;overflow:hidden;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  min-height:380px;
+  border:1px solid var(--linha);border-radius:22px;background:var(--painel);
+  text-decoration:none;
+  transition:border-color .25s;
+}
+.dest img{
+  position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;
+  transition:transform .6s ease;
+}
+.dest.com-foto::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(to top,rgba(0,0,0,.88),rgba(0,0,0,.05) 65%);
+}
+.dest-ico{
+  position:absolute;top:24px;left:24px;
+  width:64px;height:64px;border-radius:20px;
+  display:grid;place-items:center;
+  background:rgba(255,107,26,.12);color:var(--laranja);
+}
+.dest-ico .ico{width:34px;height:34px}
+.dest-txt{padding:24px}
+.dest h3{font-weight:800;font-size:1.6rem;line-height:1.15}
+.dest p{margin-top:6px;color:var(--suave);font-size:.98rem}
+.dest .mais{display:inline-block;margin-top:14px;font-weight:700;color:var(--laranja)}
+.dest:hover{border-color:var(--laranja)}
+.dest:hover img{transform:scale(1.04)}
+
+@media (max-width:859px){
+  .destaques{grid-template-columns:1fr}
+  .dest{min-height:260px}
+}
+
+/* ---------- Cardápio ---------- */
+.abas{
+  position:relative;
+  display:flex;gap:8px;overflow-x:auto;
+  margin:0 calc(var(--margem) * -1);padding:2px var(--margem) 14px;
+  scroll-snap-type:x proximity;scrollbar-width:none;
+}
+.abas::-webkit-scrollbar{display:none}
+.abas input{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.abas label{
+  flex:none;scroll-snap-align:start;
+  padding:11px 20px;
+  border:1px solid rgba(255,255,255,.28);border-radius:999px;
+  font-weight:600;font-size:.98rem;white-space:nowrap;cursor:pointer;
+  transition:background-color .2s, color .2s, border-color .2s;
+}
+.abas label:hover{border-color:var(--laranja)}
+.abas input:checked + label{background:var(--laranja);border-color:var(--laranja);color:#000}
+.abas input:focus-visible + label{outline:2px solid var(--branco);outline-offset:3px}
+@media (min-width:860px){
+  .abas{flex-wrap:wrap;overflow:visible;margin:0;padding:0 0 14px}
+}
+
+.paineis{margin-top:14px}
+.painel{display:none;animation:surgir .35s ease-out both}
+.cardapio:has(#aba-tradicionais:checked) #p-tradicionais,
+.cardapio:has(#aba-doces:checked) #p-doces,
+.cardapio:has(#aba-cone:checked) #p-cone,
+.cardapio:has(#aba-esfirras:checked) #p-esfirras,
+.cardapio:has(#aba-petiscos:checked) #p-petiscos,
+.cardapio:has(#aba-bebidas:checked) #p-bebidas,
+.cardapio:has(#aba-drinks:checked) #p-drinks,
+.cardapio:has(#aba-cervejas:checked) #p-cervejas,
+.cardapio:has(#aba-chopp:checked) #p-chopp{display:block}
+@keyframes surgir{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+.painel h3{font-weight:800;font-size:clamp(1.5rem,3vw,2rem);line-height:1.15}
+.painel-intro{margin-top:8px;color:var(--suave);max-width:60ch}
+.tamanhos{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.tamanhos li{
+  padding:6px 14px;border:1px solid var(--linha);border-radius:999px;
+  font-size:.9rem;font-weight:600;
+}
+.painel .itens,.painel .avisos{margin-top:24px}
+
+.itens{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));gap:16px}
+.item{
+  display:flex;flex-direction:column;gap:12px;
+  padding:24px;
+  background:var(--painel);border:1px solid var(--linha);border-radius:20px;
+  transition:border-color .25s, transform .25s;
+}
+.item:hover{border-color:var(--laranja);transform:translateY(-3px)}
+.item-icone{
+  width:44px;height:44px;border-radius:12px;
+  display:grid;place-items:center;
+  background:rgba(255,107,26,.12);color:var(--laranja);
+}
+.item h4{font-weight:700;font-size:1.25rem;line-height:1.2}
+.item .item-desc{color:var(--suave);font-size:.95rem}
+.item .tamanhos{margin-top:0}
+.item .btn{margin-top:auto;padding:12px 22px}
+/* Preço (quando for cadastrado): <p class="item-preco">R$ 00,00</p> */
+.item-preco{font-weight:700;font-size:1.15rem;color:var(--branco)}
+
+.avisos{display:grid;gap:16px}
+.aviso{
+  display:flex;align-items:center;gap:24px;
+  padding:28px;
+  background:var(--painel);border:1px solid var(--linha);border-radius:22px;
+  transition:border-color .25s;
+}
+.aviso:hover{border-color:var(--laranja)}
+.aviso-ico{
+  width:64px;height:64px;border-radius:20px;flex:none;
+  display:grid;place-items:center;
+  background:rgba(255,107,26,.12);color:var(--laranja);
+}
+.aviso-ico .ico{width:32px;height:32px}
+.aviso img{width:140px;height:140px;flex:none;object-fit:cover;border-radius:16px}
+.aviso-txt{flex:1}
+.aviso h4{font-family:var(--fonte-titulo);font-variation-settings:"SOFT" 100,"WONK" 0;font-weight:700;font-size:1.35rem;line-height:1.2}
+.aviso p{margin-top:4px;color:var(--suave)}
+.aviso.destaque{border-color:rgba(255,107,26,.6);background:rgba(255,107,26,.07)}
+@media (max-width:640px){
+  .aviso{flex-direction:column;align-items:flex-start;gap:16px;padding:22px}
+  .aviso img{width:100%;height:180px}
+}
+
+/* ---------- Diferenciais ---------- */
+.difs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:16px}
+.dif{padding:24px;background:var(--painel);border:1px solid var(--linha);border-radius:20px}
+.dif-ico{
+  width:48px;height:48px;border-radius:14px;margin-bottom:16px;
+  display:grid;place-items:center;
+  background:rgba(255,107,26,.12);color:var(--laranja);
+}
+.dif h3{font-weight:700;font-size:1.15rem;line-height:1.25}
+.dif p{margin-top:8px;color:var(--suave);font-size:.98rem}
+
+/* ---------- Experiência ---------- */
+.exp-grade{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(32px,6vw,72px);align-items:center}
+.exp-txt p{margin-top:16px;color:var(--suave);font-size:1.1rem;max-width:44ch}
+.exp-txt .btn{margin-top:28px}
+.mosaico{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding-bottom:28px}
+.mosaico figure{aspect-ratio:1;overflow:hidden;border:1px solid var(--linha);border-radius:20px;background:#111}
+.mosaico figure:nth-child(even){transform:translateY(28px)}
+.mosaico img{width:100%;height:100%;object-fit:cover}
+@media (max-width:859px){.exp-grade{grid-template-columns:1fr}}
+
+/* ---------- Avaliações ---------- */
+.av-grade{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,6vw,72px);align-items:start}
+.nota{padding:32px;background:var(--painel);border:1px solid var(--linha);border-radius:22px}
+.nota-num{font-weight:800;font-size:clamp(3.6rem,9vw,5.5rem);line-height:1}
+.nota-num small{font-size:.35em;font-weight:600;color:var(--suave)}
+.nota .estrelas{margin-top:14px;font-size:1.4rem}
+.nota-txt{margin-top:12px;font-weight:600}
+.nota .btn{margin-top:24px}
+
+.fala{padding-bottom:32px;border-bottom:1px solid var(--linha)}
+.fala + .fala{padding-top:32px}
+.fala:last-child{border-bottom:0;padding-bottom:0}
+.fala blockquote p{font-weight:600;font-size:clamp(1.3rem,2.8vw,1.8rem);line-height:1.3}
+.fala blockquote p::before{content:"\201C";color:var(--laranja)}
+.fala blockquote p::after{content:"\201D";color:var(--laranja)}
+.fala figcaption{margin-top:14px;color:var(--suave);font-size:.95rem}
+@media (max-width:859px){.av-grade{grid-template-columns:1fr}}
+
+/* ---------- Localização e horário ---------- */
+.local-grade{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:24px;align-items:stretch}
+.local-info{
+  display:flex;flex-direction:column;gap:24px;
+  padding:32px;background:var(--painel);border:1px solid var(--linha);border-radius:22px;
+}
+.info-bloco dt{color:var(--suave);font-size:.92rem}
+.info-bloco dd{margin-top:4px;font-size:1.08rem;font-weight:500}
+.info-bloco dd a{text-decoration:none;transition:color .2s}
+.info-bloco dd a:hover{color:var(--laranja)}
+.info-bloco + .info-bloco{padding-top:20px;border-top:1px solid var(--linha)}
+.local-centro{display:flex;align-items:center;gap:8px;margin-top:10px;color:var(--suave);font-size:.95rem}
+.local-centro .ico{width:18px;height:18px;color:var(--laranja)}
+
+.horarios{width:100%;margin-top:6px;border-collapse:collapse}
+.horarios th,.horarios td{padding:12px 10px;text-align:left;font-size:1.02rem;border-bottom:1px solid var(--linha)}
+.horarios tr:last-child th,.horarios tr:last-child td{border-bottom:0}
+.horarios th{font-weight:500;color:var(--suave)}
+.horarios td{text-align:right;font-weight:600}
+.horarios tr.hoje{background:rgba(255,107,26,.12)}
+.horarios tr.hoje th{color:var(--branco);font-weight:700}
+.horarios tr.hoje th::after{content:" (hoje)";color:var(--laranja);font-weight:600}
+.status-linha{margin-top:14px}
+.local-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto}
+
+.mapa{min-height:420px;overflow:hidden;border:1px solid var(--linha);border-radius:22px;background:#0d0d0d}
+.mapa iframe{
+  display:block;width:100%;height:100%;min-height:420px;border:0;
+  /* deixa o mapa escuro, combinando com a página. Apague esta linha para o mapa colorido. */
+  filter:invert(92%) hue-rotate(180deg) saturate(.85) contrast(.92);
+}
+@media (max-width:859px){
+  .local-grade{grid-template-columns:1fr}
+  .local-info{padding:24px}
+  .mapa,.mapa iframe{min-height:320px}
+}
+
+/* ---------- CTA final ---------- */
+.cta-final{
+  position:relative;isolation:isolate;overflow:hidden;
+  padding:clamp(80px,13vw,150px) 0;
+  border-top:1px solid var(--linha);text-align:center;
+}
+.cta-final > img{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover}
+.cta-final::before{content:"";position:absolute;inset:0;z-index:-1;background:rgba(0,0,0,.72)}
+.cta-final h2{font-weight:800;font-size:clamp(2.4rem,7vw,4.6rem);line-height:1.05;text-wrap:balance}
+.cta-final p{margin:16px auto 0;max-width:42ch;font-size:1.15rem;color:var(--suave)}
+.cta-final .acoes{justify-content:center;margin-top:34px}
+
+/* ---------- Rodapé ---------- */
+.rodape{padding:56px 0 40px;border-top:1px solid var(--linha);color:var(--suave);font-size:.98rem}
+.rodape-grade{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:32px}
+.rodape .marca{color:var(--branco)}
+.rodape h3{font-size:.92rem;font-weight:600;color:var(--branco);margin-bottom:12px}
+.rodape li + li{margin-top:8px}
+.rodape a{text-decoration:none;transition:color .2s}
+.rodape a:hover{color:var(--laranja)}
+.rodape .sobre-rodape{margin-top:14px;max-width:32ch}
+.rodape-fim{margin-top:40px;padding-top:24px;border-top:1px solid var(--linha);font-size:.9rem}
+@media (max-width:859px){.rodape-grade{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.rodape-grade{grid-template-columns:1fr}}
+
+/* ---------- CTA fixo no celular ---------- */
+.cta-fixo{display:none}
+@media (max-width:859px){
+  .cta-fixo{
+    display:block;position:fixed;left:0;right:0;bottom:0;z-index:60;
+    padding:10px var(--margem) calc(10px + env(safe-area-inset-bottom));
+    background:rgba(0,0,0,.92);
+    -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+    border-top:1px solid var(--linha);
+  }
+  .cta-fixo .btn{width:100%;padding:15px}
+  body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+}
+
+/* ---------- Movimento reduzido ---------- */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none !important;transition:none !important}
+  .js .rev{opacity:1;transform:none}
+}
+</style>
+</head>
+
+<body>
+
+<!-- Ícones reutilizados na página -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-pizza" viewBox="0 0 24 24"><path d="M12 3.5 4.5 19.5c4.7 2.2 10.3 2.2 15 0L12 3.5Z"/><path d="M6.6 15c3.4 1.4 7.4 1.4 10.8 0"/><circle cx="11" cy="11.5" r="1.1"/><circle cx="13.6" cy="15.6" r="1.1"/></symbol>
+  <symbol id="i-cone" viewBox="0 0 24 24"><path d="M7 10h10l-5 11Z"/><path d="M8.8 13.6 14.4 16M10.4 17.2 12.8 18.2M15.2 13.6 9.6 16"/><path d="M7.2 10C6 7 8 4.6 10.4 5.2 11.2 3.6 14 3.6 14.8 5.2 17 4.6 18.4 7.2 16.8 10"/></symbol>
+  <symbol id="i-prato" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.8"/></symbol>
+  <symbol id="i-copo" viewBox="0 0 24 24"><path d="M6.5 5h11l-1.4 13.2a2 2 0 0 1-2 1.8h-4.2a2 2 0 0 1-2-1.8Z"/><path d="M7.4 10h9.2M13.5 5l2-3"/></symbol>
+  <symbol id="i-caneca" viewBox="0 0 24 24"><path d="M6 6.5h9V18a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2Z"/><path d="M15 9h2.5a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H15M6 10h9"/></symbol>
+  <symbol id="i-lata" viewBox="0 0 24 24"><path d="M8 4h8v16a1.5 1.5 0 0 1-1.5 1.5h-5A1.5 1.5 0 0 1 8 20Z"/><path d="M8 8h8M8 16h8"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-brilho" viewBox="0 0 24 24"><path d="M12 3l1.9 5.6L19.5 10.5l-5.6 1.9L12 18l-1.9-5.6L4.5 10.5l5.6-1.9Z"/><path d="M19 17v4M17 19h4"/></symbol>
+  <symbol id="i-moto" viewBox="0 0 24 24"><circle cx="6" cy="17" r="2.6"/><circle cx="18" cy="17" r="2.6"/><path d="M8.6 17h4.4l2.4-7.5h3M14 9.5h-3.5L9 6.5H6.5"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 4v-4A2.5 2.5 0 0 1 4 13.5Z"/><path d="M8.5 8.5h7M8.5 11.5h4.5"/></symbol>
+  <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r=".8"/></symbol>
+</svg>
+
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ====================== TOPO ====================== -->
+<header class="topo" id="topo">
+  <div class="topo-int">
+
+    <!-- Logo provisória. Para usar a logo oficial, troque o <svg> por: <img src="fotos/logo-boa-massa.png" alt="Boa Massa"> -->
+    <a class="marca" href="#inicio" aria-label="Boa Massa, ir para o início">
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <circle cx="16" cy="16" r="15" fill="#ff6b1a"/>
+        <circle cx="16" cy="16" r="11.5" fill="#000"/>
+        <circle cx="12" cy="12" r="2.6" fill="#ff6b1a"/>
+        <circle cx="20.5" cy="14" r="2.2" fill="#ff6b1a"/>
+        <circle cx="15" cy="21" r="2.4" fill="#ff6b1a"/>
+      </svg>
+      Boa Massa
+    </a>
+
+    <!-- No celular o menu fica recolhido. Abre e fecha só com CSS (:target). -->
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="#inicio">Início</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#localizacao">Localização</a>
+    </nav>
+
+    <div class="topo-acoes">
+      <a class="btn btn-laranja btn-topo" data-wa data-evento="click_pedir_agora" href="https://wa.me/5581999241818?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Boa%20Massa%20e%20gostaria%20de%20fazer%20um%20pedido.">Pedir agora</a>
+      <a class="menu-abrir" href="#menu" aria-label="Abrir menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </a>
+      <a class="menu-fechar" href="#topo" aria-label="Fechar menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </a>
+    </div>
+
+  </div>
+</header>
+
+<main id="conteudo">
+
+<!-- ====================== INÍCIO ====================== -->
+<section class="hero" id="inicio">
+  <div class="hero-int">
+
+    <div class="hero-texto">
+      <div class="chips">
+        <p class="chip"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>Belo Jardim - PE</p>
+        <p class="chip" data-status hidden><span class="ponto" aria-hidden="true"></span><span data-status-texto></span></p>
+      </div>
+
+      <h1>Pizza que dá vontade de repetir.</h1>
+      <p class="lead">Pizza de alta qualidade, ambiente reservado e opções para aproveitar no centro de Belo Jardim.</p>
+
+      <div class="acoes">
+        <a class="btn btn-laranja btn-grande" data-wa data-evento="click_pedir_agora" href="https://wa.me/5581999241818?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Boa%20Massa%20e%20gostaria%20de%20fazer%20um%20pedido.">
+          <svg class="ico" aria-hidden="true"><use href="#i-pizza"/></svg>Pedir agora
+        </a>
+        <a class="btn btn-contorno btn-grande" data-evento="click_cardapio" href="#cardapio">Ver cardápio</a>
+      </div>
+
+      <div class="hero-info">
+        <p class="selo">
+          <span class="estrelas" role="img" aria-label="Nota 4,3 de 5 no Google"><span class="estrelas-cheias" style="width:86%">★★★★★</span>★★★★★</span>
+          <span>4,3 no Google</span>
+        </p>
+        <p>Delivery em Belo Jardim</p>
+      </div>
+    </div>
+
+    <!--
+      FOTO PRINCIPAL (banco de imagens Unsplash, uso comercial liberado).
+      Para usar uma foto da própria Boa Massa, troque o endereço do src e do srcset,
+      por exemplo: src="fotos/pizza-principal.jpg" (e apague o srcset).
+    -->
+    <div class="hero-foto">
+      <img
+        src="https://images.unsplash.com/photo-1593504049359-74330189a345?auto=format&amp;fit=crop&amp;q=78&amp;w=960"
+        srcset="https://images.unsplash.com/photo-1593504049359-74330189a345?auto=format&amp;fit=crop&amp;q=78&amp;w=640 640w,
+                https://images.unsplash.com/photo-1593504049359-74330189a345?auto=format&amp;fit=crop&amp;q=78&amp;w=960 960w,
+                https://images.unsplash.com/photo-1593504049359-74330189a345?auto=format&amp;fit=crop&amp;q=78&amp;w=1280 1280w"
+        sizes="(max-width: 859px) 100vw, 520px"
+        alt="Pizza com bastante queijo, em close"
+        width="1280" height="960" fetchpriority="high">
+    </div>
+
+  </div>
+</section>
+
+<!-- ====================== PEÇA DO SEU JEITO ====================== -->
+<section class="secao" id="pedir">
+  <div class="cont">
+    <div class="cab rev">
+      <h2>Peça do seu jeito</h2>
+      <p>Escolha a forma mais conveniente para fazer seu pedido.</p>
+    </div>
+
+    <div class="canais rev">
+      <div class="canal">
+        <span class="canal-ico"><svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg></span>
+        <div class="canal-txt">
+          <h3>WhatsApp</h3>
+          <p>Faça seu pedido diretamente com a Boa Massa.</p>
+          <p class="detalhe">(81) 99924-1818</p>
+        </div>
+        <a class="btn btn-laranja" data-wa data-evento="click_pedir_agora" href="https://wa.me/5581999241818?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Boa%20Massa%20e%20gostaria%20de%20fazer%20um%20pedido.">Pedir pelo WhatsApp</a>
+      </div>
+
+      <!-- Só aparece depois que a URL oficial da loja no Quero Delivery for cadastrada (veja CONFIG no final do arquivo). -->
+      <div class="canal" data-quero-bloco hidden>
+        <span class="canal-ico"><svg class="ico" aria-hidden="true"><use href="#i-moto"/></svg></span>
+        <div class="canal-txt">
+          <h3>Quero Delivery</h3>
+          <p>Peça online pelo Quero Delivery.</p>
+        </div>
+        <a class="btn btn-contorno" data-quero-link href="#pedir">Pedir pelo Quero Delivery</a>
+      </div>
+    </div>
+
+    <p class="nota-entrega">Delivery em Belo Jardim. A taxa de entrega pode variar conforme a região.</p>
+  </div>
+</section>
+
+<!-- ====================== DESTAQUES DA CASA ====================== -->
+<section class="secao" id="destaques">
+  <div class="cont">
+    <div class="cab rev">
+      <h2>Destaques da casa</h2>
+      <p>Algumas das opções que fazem parte da experiência Boa Massa.</p>
+    </div>
+
+    <div class="destaques rev">
+
+      <a class="dest com-foto" href="#cardapio" data-aba="tradicionais" data-evento="click_cardapio">
+        <img
+          src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&amp;fit=crop&amp;q=75&amp;w=800"
+          srcset="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w,
+                  https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w"
+          sizes="(max-width: 859px) 100vw, 380px"
+          alt="Pizza de queijo fatiada, com tomate-cereja e alecrim" width="800" height="800" loading="lazy" decoding="async">
+        <div class="dest-txt">
+          <h3>Pizzas</h3>
+          <p>Tradicionais e doces. Tamanhos P (8 fatias) e G (12 fatias).</p>
+          <span class="mais">Ver pizzas</span>
+        </div>
+      </a>
+
+      <a class="dest" href="#cardapio" data-aba="cone" data-evento="click_cardapio">
+        <span class="dest-ico"><svg class="ico" aria-hidden="true"><use href="#i-cone"/></svg></span>
+        <div class="dest-txt">
+          <h3>Pizza cone</h3>
+          <p>Uma categoria própria no cardápio da Boa Massa.</p>
+          <span class="mais">Ver pizza cone</span>
+        </div>
+      </a>
+
+      <a class="dest com-foto" href="#cardapio" data-aba="drinks" data-evento="click_cardapio">
+        <img
+          src="https://images.unsplash.com/photo-1570598912132-0ba1dc952b7d?auto=format&amp;fit=crop&amp;q=75&amp;w=800"
+          srcset="https://images.unsplash.com/photo-1570598912132-0ba1dc952b7d?auto=format&amp;fit=crop&amp;q=75&amp;w=480 480w,
+                  https://images.unsplash.com/photo-1570598912132-0ba1dc952b7d?auto=format&amp;fit=crop&amp;q=75&amp;w=800 800w"
+          sizes="(max-width: 859px) 100vw, 380px"
+          alt="Dois drinks laranja com gelo e alecrim" width="800" height="800" loading="lazy" decoding="async">
+        <div class="dest-txt">
+          <h3>Drinks</h3>
+          <p>Opções para acompanhar sua experiência.</p>
+          <span class="mais">Ver drinks</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ====================== CARDÁPIO ====================== -->
+<section class="secao" id="cardapio">
+  <div class="cont">
+    <div class="cab rev">
+      <h2>Cardápio</h2>
+      <p>Escolha uma categoria. Para pedir, é só clicar e falar com a gente no WhatsApp.</p>
+    </div>
+
+    <!--
+      COMO CADASTRAR SABORES, FOTOS E PREÇOS DEPOIS
+      Copie um bloco <article class="item"> de "Pizzas tradicionais" e altere:
+        - o nome no <h4> e o texto em data-msg (mensagem que vai para o WhatsApp);
+        - para colocar preço, adicione dentro do card: <p class="item-preco">R$ 00,00</p>
+        - para colocar foto, adicione no início do card:
+          <img src="fotos/nome.jpg" alt="Nome da pizza" width="600" height="400" loading="lazy">
+      Nenhum preço, sabor ou descrição foi inventado. Só aparece o que foi informado.
+    -->
+    <div class="cardapio rev">
+
+      <div class="abas" role="radiogroup" aria-label="Categorias do cardápio">
+        <input type="radio" name="aba" id="aba-tradicionais" checked><label for="aba-tradicionais">Pizzas tradicionais</label>
+        <input type="radio" name="aba" id="aba-doces"><label for="aba-doces">Pizzas doces</label>
+        <input type="radio" name="aba" id="aba-cone"><label for="aba-cone">Pizza cone</label>
+        <input type="radio" name="aba" id="aba-esfirras"><label for="aba-esfirras">Esfirras</label>
+        <input type="radio" name="aba" id="aba-petiscos"><label for="aba-petiscos">Petiscos</label>
+        <input type="radio" name="aba" id="aba-bebidas"><label for="aba-bebidas">Bebidas</label>
+        <input type="radio" name="aba" id="aba-drinks"><label for="aba-drinks">Drinks</label>
+        <input type="radio" name="aba" id="aba-cervejas"><label for="aba-cervejas">Cervejas</label>
+        <input type="radio" name="aba" id="aba-chopp"><label for="aba-chopp">Chopp</label>
+      </div>
+
+      <div class="paineis">
+
+        <!-- Pizzas tradicionais -->
+        <section class="painel" id="p-tradicionais" aria-label="Pizzas tradicionais">
+          <h3>Pizzas tradicionais</h3>
+          <p class="painel-intro">Alguns dos sabores tradicionais da casa. Para conhecer os demais, é só perguntar pelo WhatsApp.</p>
+          <ul class="tamanhos" aria-label="Tamanhos">
+            <li>P, 8 fatias</li>
+            <li>G, 12 fatias</li>
+          </ul>
+
+          <div class="itens">
+            <article class="item">
+              <span class="item-icone"><svg class="ico" aria-hidden="true"><use href="#i-pizza"/></svg></span>
+              <h4>Frango com catupiry</h4>
+              <ul class="tamanhos" aria-label="Tamanhos"><li>P</li><li>G</li></ul>
+              <a class="btn btn-laranja" data-wa data-msg="Olá! Vim pelo site da Boa Massa e gostaria de pedir a pizza Frango com catupiry." href="https://wa.me/5581999241818">Quero essa</a>
+            </article>
+            <article class="item">
+              <span class="item-icone"><svg class="ico" aria-hidden="true"><use href="#i-pizza"/></svg></span>
+              <h4>4 queijos</h4>
+              <ul class="tamanhos" aria-label="Tamanhos"><li>P</li><li>G</li></ul>
+              <a class="btn btn-laranja" data-wa data-msg="Olá! Vim pelo site da Boa Massa e gostaria de pedir a pizza 4 queijos." href="https://wa.me/5581999241818">Quero essa</a>
+            </article>
+            <article class="item">
+              <span class="item-icone"><svg class="ico" aria-hidden="true"><use href="#i-pizza"/></svg></span>
+              <h4>Calabresa</h4>
+              <ul class="tamanhos" aria-label="Tamanhos"><li>P</li><li>G</li></ul>
+              <a class="btn btn-laranja" data-wa data-msg="Olá! Vim pelo site da Boa Massa e gostaria de pedir a pizza Calabresa." href="https://wa.me/5581999241818">Quero essa</a>
+            </article>
+            <article class="item">
+              <span class="item-icone"><svg class="ico" aria-hidden="true"><use href="#i-pizza"/></svg></span>
+              <h4>Carne de sol</h4>
+              <ul class="tamanhos" aria-label="Tamanhos"><li>P</li><li>G</li></ul>
+              <a class="btn btn-laranja" data-wa data-msg="Olá! Vim pelo site da Boa Massa e gostaria de pedir a pizza Carne de sol." href="https://wa.me/5581999241818">Quero essa</a>
+            </article>
+            <article class="item">
+              <span class="item-icone"><svg class="ico" aria-hidden="true"><use href="#i-brilho"/></svg></span>
+              <h4>Outros sabores</h4>
+              <p class="item-desc">Quer saber o que mais temos? Pergunte pelos sabores tradicionais.</p>
+              <a class="btn btn-contorno" data-wa data-msg="Olá! Vim pelo site da Boa Massa e gostaria de saber os sabores de pizzas tradicionais." href="https://wa.me/5581999241818">Perguntar sabores</a>
+            </article>
+          </div>
+        </section>
+
+        <!-- Pizzas doces -->
+        <section class="painel" id="p-doces" aria-label="Pizzas doces">
+          <h3>Pizzas doces</h3>
+          <p class="painel-intro">Para fechar a noite com algo doce.</p>
+          <div class="avisos">
+            <div class="aviso">
+              <span class="aviso-ico"><svg class="ico" aria-hidden="true"><use href="#i-pizza"/></svg></span>
+              <div class="aviso-txt">
+                <h4>Pizzas doces</h4>
+                <p>Consulte os sabores disponíveis pelo WhatsApp.</p>
+              </div>
+              <a class="btn btn-laranja" data-wa data-msg="Olá! Vim pelo site da Boa Massa e gostaria de saber os sabores de pizzas doces." href="https://wa.me/5581999241818">Perguntar sabores</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Pizza cone -->
+        <section class="painel" id="p-cone" aria-label="Pizza cone">
+          <h3>Pizza cone</h3>
+          <p class="painel-intro">Uma categoria própria no cardápio da Boa Massa: a pizza em formato de cone.</p>
+          <div class="avisos">
+            <div class="aviso destaque">
+              <span class="aviso-ico"><svg class="ico" aria-hidden="true"><use href="#i-cone"/></svg></span>
+              <div class="aviso-txt">
+                <h4>Pizza cone</h4>
+                <p>Consulte os sabores disponíveis pelo WhatsApp.</p>
+              </div>
+              <a class="btn btn-laranja" data-wa data-msg="Olá! Vim pelo site da Boa Massa e gostaria de saber os sabores de pizza cone." href="https://wa.me/5581999241818">Perguntar sabores</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Esfirras -->
+        <section class="painel" id="p-esfirras" aria-label="Esfirras">
+          <h3>Esfirras</h3>
+          <p class="painel-intro">Esfirras abertas.</p>
+          <div class="avisos">
+            <div class="aviso">
+              <span class="aviso-ico"><svg class="ico" aria-hidden="true"><use href="#i-prato"/></svg></span>
+              <div class="aviso-txt">
+                <h4>Esfirras abertas</h4>
+                <p>Consulte os sabores disponíveis pelo WhatsApp.</p>
+              </div>
+              <a class="btn btn-laranja" data-wa data-msg="Olá! Vim pelo site da Boa Massa e gostaria de saber os sabores de esfirras abertas." href="https://wa.me/5581999241818">Perguntar sabores</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Petiscos -->
+        <section class="painel" id="p-petiscos" aria-label="Petiscos">
+          <h3>Petiscos</h3>
+          <p class="painel-intro">Para dividir na mesa.</p>
+          <div class="avisos">
+            <div class="aviso">
+              <span class="aviso-ico"><svg class="ico" aria-hidden="true"><use href="#i-prato"/></svg></span>
+              <div class="aviso-txt">
+                <h4>Petiscos</h4>
+                <p>Consulte as opções disponíveis pelo WhatsApp.</p>
+              </div>
+              <a class="btn btn-laranja" data-wa data-msg="Olá! Vim pelo site da Boa Massa e gostaria de saber as opções de petiscos." href="https://wa.me/5581999241818">Ver opções</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Bebidas -->
+        <section class="painel" id="p-bebidas" aria-label="Bebidas">
+          <h3>Bebidas</h3>
+          <p class="painel-intro">Refrigerantes e sucos para acompanhar.</p>
+          <div class="avisos">
+            <div class="aviso">
+              <span class="aviso-ico"><svg class="ico" aria-hidden="true"><use href="#i-lata"/></svg></span>
+              <div class="aviso-txt">
+                <h4>Refrigerantes</h4>
+                <p>Consulte as opções disponíveis pelo WhatsApp.</p>
+              </div>
+              <a class="btn btn-laranja" data-wa data-msg="Olá! Vim pelo site da Boa Massa e gostaria de saber as opções de refrigerantes." href="https://wa.me/5581999241818">Pedir</a>
+            </div>
+            <div class="aviso">
+              <span class="aviso-ico"><svg class="ico" aria-hidden="true"><use href="#i-copo"/></svg></span>
+              <div class="aviso-txt">
+                <h4>Sucos</h4>
+                <p>Consulte as opções disponíveis pelo WhatsApp.</p>
+              </div>
+              <a class="btn btn-laranja" data-wa data-msg="Olá! Vim pelo site da Boa Massa e gostaria de saber as opções de sucos." href="https://wa.me/5581999241818">Pedir</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Drinks -->
+        <section class="painel" id="p-drinks" aria-label="Drinks">
+          <h3>Drinks</h3>
+          <p class="painel-intro">Opções para acompanhar sua experiência.</p>
+          <div class="avisos">
+            <div class="aviso">
+              <img
+                src="https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?auto=format&amp;fit=crop&amp;q=75&amp;w=400"
+                alt="Dois copos com bebida vermelha" width="400" height="400" loading="lazy" decoding="async">
+              <div class="aviso-txt">
+                <h4>Drinks</h4>
+                <p>Consulte os drinks disponíveis pelo WhatsApp.</p>
+              </div>
+              <a class="btn btn-laranja" data-wa data-msg="Olá! Vim pelo site da Boa Massa e gostaria de saber os drinks disponíveis." href="https://wa.me/5581999241818">Perguntar drinks</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Cervejas -->
+        <section class="painel" id="p-cervejas" aria-label="Cervejas">
+          <h3>Cervejas</h3>
+          <p class="painel-intro">Cervejas para acompanhar a pizza.</p>
+          <div class="avisos">
+            <div class="aviso">
+              <span class="aviso-ico"><svg class="ico" aria-hidden="true"><use href="#i-caneca"/></svg></span>
+              <div class="aviso-txt">
+                <h4>Cervejas</h4>
+                <p>Consulte as opções disponíveis pelo WhatsApp.</p>
+              </div>
+              <a class="btn btn-laranja" data-wa data-msg="Olá! Vim pelo site da Boa Massa e gostaria de saber as cervejas disponíveis." href="https://wa.me/5581999241818">Ver opções</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Chopp -->
+        <section class="painel" id="p-chopp" aria-label="Chopp">
+          <h3>Chopp</h3>
+          <p class="painel-intro">Chopp para acompanhar.</p>
+          <div class="avisos">
+            <div class="aviso">
+              <span class="aviso-ico"><svg class="ico" aria-hidden="true"><use href="#i-caneca"/></svg></span>
+              <div class="aviso-txt">
+                <h4>Chopp</h4>
+                <p>Consulte as opções disponíveis pelo WhatsApp.</p>
+              </div>
+              <a class="btn btn-laranja" data-wa data-msg="Olá! Vim pelo site da Boa Massa e gostaria de saber as opções de chopp." href="https://wa.me/5581999241818">Ver opções</a>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== POR QUE BOA MASSA ====================== -->
+<section class="secao" id="sobre">
+  <div class="cont">
+    <div class="cab rev">
+      <h2>Por que Boa Massa?</h2>
+    </div>
+
+    <div class="difs rev">
+      <div class="dif">
+        <span class="dif-ico"><svg class="ico" aria-hidden="true"><use href="#i-pizza"/></svg></span>
+        <h3>Massa de alta qualidade</h3>
+        <p>Uma das características que define a experiência da Boa Massa.</p>
+      </div>
+      <div class="dif">
+        <span class="dif-ico"><svg class="ico" aria-hidden="true"><use href="#i-copo"/></svg></span>
+        <h3>Drinks</h3>
+        <p>Opções para acompanhar sua experiência.</p>
+      </div>
+      <div class="dif">
+        <span class="dif-ico"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg></span>
+        <h3>No centro de Belo Jardim</h3>
+        <p>Localização central para facilitar seu acesso.</p>
+      </div>
+      <div class="dif">
+        <span class="dif-ico"><svg class="ico" aria-hidden="true"><use href="#i-brilho"/></svg></span>
+        <h3>Ambiente reservado</h3>
+        <p>Um espaço para aproveitar sua refeição com mais tranquilidade.</p>
+      </div>
+      <div class="dif">
+        <span class="dif-ico"><svg class="ico" aria-hidden="true"><use href="#i-moto"/></svg></span>
+        <h3>Delivery</h3>
+        <p>Receba sua Boa Massa em Belo Jardim.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== EXPERIÊNCIA ====================== -->
+<section class="secao" id="experiencia">
+  <div class="cont exp-grade">
+
+    <div class="exp-txt rev">
+      <h2>Mais do que uma pizza.</h2>
+      <p>Um ambiente reservado, drinks e uma experiência para aproveitar no centro de Belo Jardim.</p>
+      <a class="btn btn-contorno" data-evento="click_instagram" href="https://www.instagram.com/boa_massa_bj/" target="_blank" rel="noopener">Seguir no Instagram</a>
+    </div>
+
+    <!--
+      Fotos de banco de imagens (Unsplash). Quando tiver fotos do ambiente e dos pratos da Boa Massa,
+      troque os endereços do src (ex.: src="fotos/ambiente-1.jpg").
+    -->
+    <div class="mosaico rev">
+      <figure><img src="https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?auto=format&amp;fit=crop&amp;q=75&amp;w=600" alt="Pizza de pepperoni" width="600" height="600" loading="lazy" decoding="async"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?auto=format&amp;fit=crop&amp;q=75&amp;w=600" alt="Dois copos com bebida vermelha" width="600" height="600" loading="lazy" decoding="async"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1669895616443-5d21d5acc6e0?auto=format&amp;fit=crop&amp;q=75&amp;w=600" alt="Pizza com tomate e manjericão" width="600" height="600" loading="lazy" decoding="async"></figure>
+      <figure><img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&amp;fit=crop&amp;q=75&amp;w=600" alt="Três copos de vidro com bebida" width="600" height="600" loading="lazy" decoding="async"></figure>
+    </div>
+
+  </div>
+</section>
+
+<!-- ====================== AVALIAÇÕES ====================== -->
+<section class="secao" id="avaliacoes">
+  <div class="cont">
+    <div class="cab rev">
+      <h2>Quem já veio conta</h2>
+      <p>Comentários de clientes da Boa Massa no Google.</p>
+    </div>
+
+    <div class="av-grade rev">
+      <div class="nota">
+        <p class="nota-num">4,3<small>/5</small></p>
+        <span class="estrelas" role="img" aria-label="Nota 4,3 de 5"><span class="estrelas-cheias" style="width:86%">★★★★★</span>★★★★★</span>
+        <p class="nota-txt">Nota no Google</p>
+        <a class="btn btn-contorno" href="https://maps.google.com/?cid=11693896392988287300" target="_blank" rel="noopener">Ver avaliações no Google</a>
+      </div>
+
+      <div class="falas">
+        <figure class="fala">
+          <blockquote><p>Ambiente bonito, boa localização e comida muito boa.</p></blockquote>
+          <figcaption>Cliente, em avaliação no Google</figcaption>
+        </figure>
+        <figure class="fala">
+          <blockquote><p>Cardápio de pizzas bem variado e um bom preço.</p></blockquote>
+          <figcaption>Cliente, em avaliação no Google</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== LOCALIZAÇÃO E HORÁRIO ====================== -->
+<section class="secao" id="localizacao">
+  <div class="cont">
+    <div class="cab rev">
+      <h2>Venha para a Boa Massa</h2>
+      <p>Pizzaria no bairro São Pedro, em Belo Jardim - PE.</p>
+    </div>
+
+    <div class="local-grade rev">
+      <div class="local-info">
+
+        <dl class="info-bloco">
+          <dt>Endereço</dt>
+          <dd>R. Pedro Firmino, 299<br>São Pedro<br>Belo Jardim - PE<br>55155-000</dd>
+          <p class="local-centro"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>Centro de Belo Jardim</p>
+        </dl>
+
+        <div class="info-bloco">
+          <p class="chip status-linha" data-status hidden><span class="ponto" aria-hidden="true"></span><span data-status-texto></span></p>
+          <table class="horarios">
+            <caption class="so-leitor" style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)">Horário de funcionamento</caption>
+            <tbody>
+              <tr data-dias="1,2,3,4,5,6"><th scope="row">Segunda a sábado</th><td>18:00 às 23:00</td></tr>
+              <tr data-dias="0"><th scope="row">Domingo</th><td>17:00 às 23:00</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <dl class="info-bloco">
+          <dt>Contato</dt>
+          <dd>
+            <a data-wa data-evento="click_whatsapp" href="https://wa.me/5581999241818">WhatsApp (81) 99924-1818</a><br>
+            <a href="tel:+558137263430">Telefone (81) 3726-3430</a>
+          </dd>
+        </dl>
+
+        <div class="local-btns">
+          <a class="btn btn-laranja" data-evento="click_localizacao" href="https://www.google.com/maps/dir/?api=1&amp;destination=Pizzaria+Boa+Massa%2C+R.+Pedro+Firmino%2C+299%2C+Belo+Jardim+-+PE" target="_blank" rel="noopener">Como chegar</a>
+          <a class="btn btn-contorno" data-evento="click_localizacao" href="https://maps.google.com/?cid=11693896392988287300" target="_blank" rel="noopener">Ver no Google</a>
+        </div>
+
+      </div>
+
+      <div class="mapa">
+        <iframe
+          title="Mapa com a localização da Boa Massa, R. Pedro Firmino, 299, Belo Jardim - PE"
+          src="https://www.google.com/maps?q=Pizzaria+Boa+Massa,+R.+Pedro+Firmino,+299,+Belo+Jardim+-+PE&amp;hl=pt-BR&amp;z=17&amp;output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== CTA FINAL ====================== -->
+<section class="cta-final" id="pedir-agora">
+  <img
+    src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&amp;fit=crop&amp;q=70&amp;w=1400"
+    alt="" width="1400" height="933" loading="lazy" decoding="async">
+  <div class="cont">
+    <h2 class="rev">Deu vontade?</h2>
+    <p class="rev">Seu próximo pedido está a poucos cliques.</p>
+    <div class="acoes rev">
+      <a class="btn btn-laranja btn-grande" data-wa data-evento="click_pedir_agora" href="https://wa.me/5581999241818?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Boa%20Massa%20e%20gostaria%20de%20fazer%20um%20pedido.">
+        <svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg>Pedir pelo WhatsApp
+      </a>
+      <a class="btn btn-contorno btn-grande" data-quero-bloco data-quero-link hidden href="#pedir">Pedir pelo Quero Delivery</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ====================== RODAPÉ ====================== -->
+<footer class="rodape">
+  <div class="cont">
+    <div class="rodape-grade">
+
+      <div>
+        <a class="marca" href="#inicio" aria-label="Boa Massa, voltar ao início">
+          <svg viewBox="0 0 32 32" aria-hidden="true">
+            <circle cx="16" cy="16" r="15" fill="#ff6b1a"/>
+            <circle cx="16" cy="16" r="11.5" fill="#000"/>
+            <circle cx="12" cy="12" r="2.6" fill="#ff6b1a"/>
+            <circle cx="20.5" cy="14" r="2.2" fill="#ff6b1a"/>
+            <circle cx="15" cy="21" r="2.4" fill="#ff6b1a"/>
+          </svg>
+          Boa Massa
+        </a>
+        <p class="sobre-rodape">Belo Jardim - PE</p>
+      </div>
+
+      <div>
+        <h3>Contato</h3>
+        <ul>
+          <li><a data-wa data-evento="click_whatsapp" href="https://wa.me/5581999241818">WhatsApp (81) 99924-1818</a></li>
+          <li><a data-evento="click_instagram" href="https://www.instagram.com/boa_massa_bj/" target="_blank" rel="noopener">@boa_massa_bj</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Endereço</h3>
+        <p>R. Pedro Firmino, 299<br>São Pedro<br>Belo Jardim - PE</p>
+      </div>
+
+      <div>
+        <h3>Horário</h3>
+        <p>Seg-Sáb: 18h às 23h<br>Dom: 17h às 23h</p>
+      </div>
+
+    </div>
+
+    <div class="rodape-fim">
+      <ul style="display:flex;flex-wrap:wrap;gap:8px 24px;margin-bottom:16px">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="https://www.instagram.com/boa_massa_bj/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a data-wa href="https://wa.me/5581999241818">WhatsApp</a></li>
+        <li><a href="#localizacao">Localização</a></li>
+      </ul>
+      <p>© 2026 Boa Massa, Belo Jardim - PE. Delivery em Belo Jardim; a taxa de entrega pode variar conforme a região.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- CTA fixo no celular -->
+<div class="cta-fixo">
+  <a class="btn btn-laranja btn-grande" data-wa data-evento="click_pedir_agora" href="https://wa.me/5581999241818?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Boa%20Massa%20e%20gostaria%20de%20fazer%20um%20pedido.">
+    <svg class="ico" aria-hidden="true"><use href="#i-pizza"/></svg>Pedir agora
+  </a>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ==========================================================
+     CONFIGURAÇÃO (é aqui que você cadastra o que ainda falta)
+     ========================================================== */
+  var CONFIG = {
+    WHATSAPP_NUMERO: "5581999241818",
+    WHATSAPP_MENSAGEM: "Olá! Vim pelo site da Boa Massa e gostaria de fazer um pedido.",
+
+    // Cole aqui a URL oficial da loja no Quero Delivery (começando com https://).
+    // Enquanto estiver vazio, os botões do Quero Delivery ficam ocultos.
+    QUERO_DELIVERY_URL: "",
+
+    // Cole os IDs quando existirem. Vazio = nada é carregado.
+    GA4_ID: "",          // exemplo: "G-XXXXXXXXXX"
+    META_PIXEL_ID: "",   // exemplo: "123456789012345"
+
+    FUSO: "America/Recife",
+    // Horário de funcionamento por dia da semana (0 = domingo ... 6 = sábado), em minutos [abre, fecha]
+    HORARIOS: {
+      0: [17 * 60, 23 * 60],
+      1: [18 * 60, 23 * 60],
+      2: [18 * 60, 23 * 60],
+      3: [18 * 60, 23 * 60],
+      4: [18 * 60, 23 * 60],
+      5: [18 * 60, 23 * 60],
+      6: [18 * 60, 23 * 60]
+    }
+  };
+
+  /* ---------- Link do WhatsApp (função reutilizável) ---------- */
+  function linkWhatsApp(mensagem) {
+    return "https://wa.me/" + CONFIG.WHATSAPP_NUMERO + "?text=" +
+      encodeURIComponent(mensagem || CONFIG.WHATSAPP_MENSAGEM);
+  }
+
+  var zaps = document.querySelectorAll("a[data-wa]");
+  for (var i = 0; i < zaps.length; i++) {
+    zaps[i].setAttribute("href", linkWhatsApp(zaps[i].getAttribute("data-msg")));
+    zaps[i].setAttribute("target", "_blank");
+    zaps[i].setAttribute("rel", "noopener");
+  }
+
+  /* ---------- Quero Delivery ---------- */
+  var urlQuero = (CONFIG.QUERO_DELIVERY_URL || "").replace(/^\s+|\s+$/g, "");
+  if (/^https:\/\//i.test(urlQuero)) {
+    var links = document.querySelectorAll("[data-quero-link]");
+    for (var q = 0; q < links.length; q++) {
+      links[q].setAttribute("href", urlQuero);
+      links[q].setAttribute("target", "_blank");
+      links[q].setAttribute("rel", "noopener");
+    }
+    var blocos = document.querySelectorAll("[data-quero-bloco]");
+    for (var b = 0; b < blocos.length; b++) blocos[b].removeAttribute("hidden");
+  }
+
+  /* ---------- Analytics (GA4 e Meta Pixel) ---------- */
+  if (CONFIG.GA4_ID) {
+    var g = document.createElement("script");
+    g.async = true;
+    g.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(CONFIG.GA4_ID);
+    document.head.appendChild(g);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag("js", new Date());
+    window.gtag("config", CONFIG.GA4_ID);
+  }
+  if (CONFIG.META_PIXEL_ID) {
+    var fbq = window.fbq = function () {
+      if (fbq.callMethod) { fbq.callMethod.apply(fbq, arguments); } else { fbq.queue.push(arguments); }
+    };
+    if (!window._fbq) window._fbq = fbq;
+    fbq.push = fbq; fbq.loaded = true; fbq.version = "2.0"; fbq.queue = [];
+    var f = document.createElement("script");
+    f.async = true;
+    f.src = "https://connect.facebook.net/en_US/fbevents.js";
+    document.head.appendChild(f);
+    fbq("init", CONFIG.META_PIXEL_ID);
+    fbq("track", "PageView");
+  }
+
+  function registrar(evento) {
+    try { if (typeof window.gtag === "function") window.gtag("event", evento); } catch (e) {}
+    try { if (typeof window.fbq === "function") window.fbq("trackCustom", evento); } catch (e) {}
+  }
+
+  document.addEventListener("click", function (ev) {
+    var a = ev.target.closest ? ev.target.closest("a") : null;
+    if (!a) return;
+    var enviados = {};
+    function uma(nome) { if (!enviados[nome]) { enviados[nome] = true; registrar(nome); } }
+
+    var evento = a.getAttribute("data-evento");
+    var href = a.getAttribute("href") || "";
+    if (evento) uma(evento);
+    if (href.indexOf("wa.me/") > -1) uma("click_whatsapp");
+    if (a.hasAttribute("data-quero-link")) uma("click_quero_delivery");
+
+    // Atalhos "Destaques" que abrem uma categoria do cardápio
+    var aba = a.getAttribute("data-aba");
+    if (aba) {
+      var radio = document.getElementById("aba-" + aba);
+      if (radio) radio.checked = true;
+    }
+  });
+
+  /* ---------- Aberto agora / Fechado agora (fuso de Belo Jardim) ---------- */
+  function rotuloHora(minutos) {
+    var h = Math.floor(minutos / 60), m = minutos % 60;
+    return h + "h" + (m ? (m < 10 ? "0" : "") + m : "");
+  }
+
+  function agoraNoFuso() {
+    var fmt = new Intl.DateTimeFormat("en-US", {
+      timeZone: CONFIG.FUSO, weekday: "short", hour: "numeric", minute: "numeric", hourCycle: "h23"
+    });
+    var partes = fmt.formatToParts(new Date()), o = {};
+    for (var i = 0; i < partes.length; i++) o[partes[i].type] = partes[i].value;
+    var dias = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+    return { dia: dias[o.weekday], min: (parseInt(o.hour, 10) % 24) * 60 + parseInt(o.minute, 10) };
+  }
+
+  function estadoDaLoja() {
+    var t = agoraNoFuso(), h = CONFIG.HORARIOS[t.dia];
+    if (t.min >= h[0] && t.min < h[1]) {
+      return { aberto: true, dia: t.dia, texto: "Aberto agora, fecha às " + rotuloHora(h[1]) };
+    }
+    if (t.min < h[0]) {
+      return { aberto: false, dia: t.dia, texto: "Fechado agora, abre hoje às " + rotuloHora(h[0]) };
+    }
+    var amanha = (t.dia + 1) % 7;
+    return { aberto: false, dia: t.dia, texto: "Fechado agora, abre amanhã às " + rotuloHora(CONFIG.HORARIOS[amanha][0]) };
+  }
+
+  function atualizarStatus() {
+    try {
+      var s = estadoDaLoja();
+      var chips = document.querySelectorAll("[data-status]");
+      for (var i = 0; i < chips.length; i++) {
+        var alvo = chips[i].querySelector("[data-status-texto]");
+        if (alvo) alvo.textContent = s.texto;
+        chips[i].classList.toggle("aberto", s.aberto);
+        chips[i].classList.toggle("fechado", !s.aberto);
+        chips[i].removeAttribute("hidden");
+      }
+      var linhas = document.querySelectorAll("tr[data-dias]");
+      for (var j = 0; j < linhas.length; j++) {
+        var dias = linhas[j].getAttribute("data-dias").split(",");
+        linhas[j].classList.toggle("hoje", dias.indexOf(String(s.dia)) > -1);
+      }
+    } catch (e) { /* sem suporte a Intl: a página segue funcionando, só sem o status */ }
+  }
+  atualizarStatus();
+  setInterval(atualizarStatus, 60000);
+
+  /* ---------- Entrada suave das seções ---------- */
+  var revelar = document.querySelectorAll(".rev");
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add("vis"); io.unobserve(e.target); }
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+    revelar.forEach(function (el) { io.observe(el); });
+  } else {
+    revelar.forEach(function (el) { el.classList.add("vis"); });
+  }
+})();
+</script>
+
+</body>
+</html>
